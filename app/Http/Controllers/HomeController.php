@@ -23,16 +23,7 @@ class HomeController extends Controller
         }
 
         $products = $query->latest()->paginate(8);
-
-        // PERBAIKAN: Ganti orderBy('sold_count') dengan yang ada kolomnya
-        // Opsi 1 - Berdasarkan stok terbanyak
-        $bestSellers = Product::orderBy('stock', 'desc')->take(4)->get();
-
-        // Opsi 2 - Berdasarkan produk terbaru (uncomment jika mau)
-        // $bestSellers = Product::latest()->take(4)->get();
-
-        // Opsi 3 - Random (uncomment jika mau)
-        // $bestSellers = Product::inRandomOrder()->take(4)->get();
+        $bestSellers = Product::orderBy('sold_count', 'desc')->take(4)->get();
 
         $categories = Product::select('category')
             ->distinct()

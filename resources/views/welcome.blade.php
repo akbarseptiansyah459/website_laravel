@@ -752,9 +752,6 @@
                 <div class="product-card">
                     <div style="position: relative;">
                         <img src="{{ asset('storage/'.$product->image) }}" class="product-img" alt="{{ $product->title }}">
-                        @if($loop->index < 3)
-                            <span class="best-seller-badge"><i class="fas fa-fire"></i> Best Seller</span>
-                            @endif
                     </div>
                     <div class="product-body">
                         <h5 class="product-title">{{ Str::limit($product->title, 40) }}</h5>
@@ -811,7 +808,7 @@
             <hr style="border-color: rgba(255,255,255,0.05);">
             <div class="text-center">
                 <p style="color: #5a6d8c; font-size: 12px; margin: 0;">
-                    © {{ date('Y') }} Toko Buku Cirebon — Dibuat dengan ❤️ oleh Akbar. All Rights Reserved.
+                    © {{ date('Y') }} Toko Buku Cirebon — Dibuat dengan ❤️ oleh <a href="http://www.instagram.com/bar_cxn?igsh=MWx0YjQ4OWI0bg==" class="footer-link">Akbar</a>. All Rights Reserved.
                 </p>
             </div>
         </div>

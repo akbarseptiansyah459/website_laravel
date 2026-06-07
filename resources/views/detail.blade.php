@@ -631,7 +631,7 @@
             <hr style="border-color: rgba(255,255,255,0.05);">
             <div class="text-center">
                 <p style="color: #5a6d8c; font-size: 12px; margin: 0;">
-                    © {{ date('Y') }} Toko Buku Cirebon — Dibuat dengan ❤️ oleh Akbar. All Rights Reserved.
+                    © {{ date('Y') }} Toko Buku Cirebon — Dibuat dengan ❤️ oleh <a href="http://www.instagram.com/bar_cxn?igsh=MWx0YjQ4OWI0bg==" class="footer-link">Akbar</a>. All Rights Reserved.
                 </p>
             </div>
         </div>
